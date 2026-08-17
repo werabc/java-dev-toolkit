@@ -1,0 +1,25 @@
+# =============================================
+# 测试 / 生产环境配置
+# 激活方式：SPRING_PROFILES_ACTIVE=prod
+# =============================================
+
+spring:
+  data:
+    redis:
+      # 生产环境使用独立 database，避免与开发缓存冲突
+      database: ${REDIS_DATABASE:1}
+
+mybatis-plus:
+  configuration:
+    # 关闭 SQL 日志输出到 stdout
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+
+# 关闭 Knife4j / Swagger，避免 API 文档对外暴露
+knife4j:
+  enable: false
+
+springdoc:
+  swagger-ui:
+    enabled: false
+  api-docs:
+    enabled: false
