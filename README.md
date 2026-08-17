@@ -29,13 +29,6 @@ deploy-package/
     └── DEVELOPMENT.md            # 开发文档
 ```
 
-## 安全密钥 (已生成)
-
-```
-JWT_SECRET_KEY=VlqkEc6zS/x7fmKbIR/Gxds3vuX1AeuheQqYzFszLzhyVcDr/K7M9kBRWI0D2HIrQf0Fkc6N7qXbWQaO6pLI+w==
-MYSQL_ROOT_PASSWORD=123456abc
-REDIS_PASSWORD=redis123456
-```
 
 ## 部署步骤
 
@@ -80,7 +73,7 @@ curl http://localhost:8081/api/auth/captcha
 
 | 角色 | 用户名 | 密码 |
 |------|--------|------|
-| 管理员 | admin | Admin@1234 |
+| 管理员 | |
 | 树洞用户 | 自行注册 | - |
 
 ## 新增功能 (v1.1.0)
